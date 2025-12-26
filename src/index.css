@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css');
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+  
+  body {
+    @apply min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white antialiased;
+  }
+  
+  #root {
+    @apply min-h-screen w-full;
+  }
+}
