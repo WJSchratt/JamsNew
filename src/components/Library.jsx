@@ -3,17 +3,13 @@ import albumData from '../data/albums';
 
 function Library() {
   return (
-    <div className="min-h-screen px-6 py-12">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen px-6 pt-12 pb-24">
+      <div className="max-w-7xl mx-auto ">
         <h2 className="text-5xl font-bold mb-12 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-          songs
-
-
-
-          
+          Albums
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-10" >
           {albumData.map((album, index) => (
             <Link 
               key={index} 
